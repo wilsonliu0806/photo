@@ -1,0 +1,24 @@
+<!--pages/photo/photo.wxml-->
+<view class="main">
+  <view class="container">
+    <view class="photoBox">
+      <view wx:for="{{photoList}}" wx:for-item="item" class="item-box">
+        <view class="date-box" wx:if = "{{item.age || index===0}}">
+          <view class="date">
+          </view>
+          <view class="age" wx:if="{{true}}">
+            <view class="age-text">{{nowAge}}</view>
+          </view>
+        </view>
+        <view class="photo-wrapper">
+          <image
+            id="myimage"
+            src="{{item.url}}"
+            mode="aspectFill"
+            style="width:580rpx;height:360rpx">
+          </image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

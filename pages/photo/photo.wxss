@@ -1,0 +1,33 @@
+/* pages/photo/photo.wxss */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #f8f8f8;
+  width: 100%;
+}
+.photoBox {
+  border-left: 5rpx solid #e6e6e6;
+  padding-left: 60rpx;
+  /*background: #eee;*/
+}
+.date-box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -91rpx;
+  top: -24rpx;
+}
+.date {
+  width: 50rpx;
+  height: 50rpx;
+  border: 4rpx solid #dbdbdb;
+  border-radius: 33rpx;
+  background: #8ecb00;
+  color: #fff;
+  background-image: url(http://owgyd9tyb.bkt.clouddn.com/1.png);
+  background-repeat: no-repeat;
+  background-position: 9rpx 9rpx;
+}
